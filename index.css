@@ -1,0 +1,101 @@
+header{
+    text-align: center;
+}
+footer{
+    text-align: center;
+
+}
+h3{
+    font-weight: 100;
+}
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.leftPanel{
+    width: 70%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.blocks{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    height: 110px;
+    width: 30%;
+    text-align: center;
+    padding-top: 90px;
+}
+.rightPanel{
+    /* float: right; */
+    width: 200px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+.miniclip{
+    display: none;
+    
+}
+button{
+    background-color: #2B8EAD;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 375px) {
+    /* For mobile phones: */
+    header{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 1px;
+        text-align: center
+    }
+    .mainContent{
+        float: inherit;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .leftPanel{
+        width: 100%; 
+    }
+    .rightPanel{
+        /* margin-top: -50%; */
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        min-width: 330px !important;
+        
+    }
+    .miniclip{
+        display: block;
+        width: 10px;
+        
+    }
+    .blocks{
+        font-size: 14px; 
+        color: black;
+        height: 30px;
+        width: 100%;
+        background-color: grey !important;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0 !important;
+    }
+    .numSpan{
+        width: 90%;
+        text-align: center;
+        margin-top: 7px;
+    }
+    button{
+        width: 100px;
+    }
+    
+  }
